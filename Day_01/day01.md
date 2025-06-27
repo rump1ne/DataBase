@@ -8,7 +8,7 @@ UNION ALL
 SELECT id AS object_id, name AS object_name FROM person
 ORDER BY object_id, object_name;
 ```
-![Screenshot 1](https://github.com/DenisShestakov1/data2sem/blob/main/day%2001/1.png)
+![alt text](1.jpg)
 
 ## Упражнение 01 - UNION dance с подзапросом
 
@@ -25,7 +25,7 @@ FROM
 ORDER BY 
   object_name;
 ```
-![Screenshot 2](https://github.com/DenisShestakov1/data2sem/blob/main/day%2001/2.png)
+![alt text](2.jpg)
 
 ## Упражнение 02 - Дубликаты или не дубликаты
 
@@ -42,7 +42,7 @@ FROM
 ORDER BY 
   pizza_name DESC;
 ```
-![Screenshot 3](https://github.com/DenisShestakov1/data2sem/blob/main/day%2001/3.jpg)
+![alt text](3.jpg)
 
 ## Упражнение 03 - "Скрытые" инсайты
 
@@ -52,7 +52,7 @@ INTERSECT
 SELECT visit_date AS action_date, person_id FROM person_visits
 ORDER BY action_date ASC, person_id DESC;
 ```
-![Screenshot 4](https://github.com/DenisShestakov1/data2sem/blob/main/day%2001/4.jpg)
+![alt text](4.jpg)
 
 ## Упражнение 04 - Разница? Да, давайте найдем разницу между мультимножествами
 
@@ -61,7 +61,7 @@ SELECT person_id FROM person_order WHERE order_date = '2022-01-07'
 EXCEPT ALL
 SELECT person_id FROM person_visits WHERE visit_date = '2022-01-07';
 ```
-![Screenshot 5](https://github.com/DenisShestakov1/data2sem/blob/main/day%2001/5.png)
+![alt text](5.jpg)
 
 ## Упражнение 05 - Слышали ли вы о декартовом произведении?
 
@@ -76,7 +76,7 @@ ORDER BY
   person.id, 
   pizzeria.id
  ```
-![Screenshot 6](https://github.com/DenisShestakov1/data2sem/blob/main/day%2001/1.jpg)
+![alt text](6.jpg)
 
 ## Упражнение 06 - Давайте посмотрим на "Скрытые" Инсайты
 
@@ -90,7 +90,7 @@ FROM person_visits
 JOIN person ON person_visits.person_id = person.id
 ORDER BY action_date ASC, person.name DESC;
 ```
-![Screenshot 7](https://github.com/DenisShestakov1/data2sem/blob/main/day%2001/7.jpg)
+![alt text](7.jpg)
 
 ## Упражнение 07 - Просто сделайте JOIN
 
@@ -105,7 +105,7 @@ ORDER BY
   order_date ASC, 
   person_information ASC;
 ```
-![Screenshot 8](https://github.com/DenisShestakov1/data2sem/blob/main/day%2001/8.jpg)
+![alt text](8.jpg)
 
 ## Упражнение 08 - Перенос JOIN в NATURAL JOIN
 
@@ -116,7 +116,8 @@ FROM person_order
 NATURAL JOIN person
 ORDER BY order_date, person_information;
 ```
-![Screenshot 9](https://github.com/DenisShestakov1/data2sem/blob/main/day%2001/9.jpg)
+![alt text](9.jpg)
+
 ## Упражнение 09 - IN против EXISTS
 
 ```sql
@@ -148,7 +149,7 @@ WHERE
       person_visits.pizzeria_id = pizzeria.id
   );
 ```
-![Screenshot 10](https://github.com/DenisShestakov1/data2sem/blob/main/day%2001/10.jpg)
+![alt text](10.jpg)
 
 ## Упражнение 10 - Глобальное JOIN
 
@@ -160,4 +161,4 @@ JOIN pizzeria ON menu.pizzeria_id = pizzeria.id
 JOIN person ON person_order.person_id = person.id
 ORDER BY person_name, pizza_name, pizzeria_name;
 ```
-![Screenshot 11](https://github.com/DenisShestakov1/data2sem/blob/main/day%2001/11.jpg)
+![alt text](11.jpg)
