@@ -61,7 +61,7 @@ SELECT person_id FROM person_order WHERE order_date = '2022-01-07'
 EXCEPT ALL
 SELECT person_id FROM person_visits WHERE visit_date = '2022-01-07';
 ```
-![alt text](5.jpg)
+![alt text](5.png)
 
 ## Упражнение 05 - Слышали ли вы о декартовом произведении?
 
