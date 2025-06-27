@@ -8,7 +8,7 @@ UNION ALL
 SELECT id AS object_id, name AS object_name FROM person
 ORDER BY object_id, object_name;
 ```
-![alt text](1.jpg)
+![alt text](1.png)
 
 ## Упражнение 01 - UNION dance с подзапросом
 
@@ -25,7 +25,7 @@ FROM
 ORDER BY 
   object_name;
 ```
-![alt text](2.jpg)
+![alt text](2.png)
 
 ## Упражнение 02 - Дубликаты или не дубликаты
 
