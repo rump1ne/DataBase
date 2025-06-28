@@ -63,7 +63,7 @@ ORDER BY
 ## Упражнение 03 
 
 ```sql 
-with diff AS (
+WITH diff AS (
   SELECT 
     pizzeria.name AS pizzeria_name, 
     ABS(
